@@ -1,0 +1,11 @@
+.avatar {
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.avatar:hover {
+  opacity: 0.4;
+  transform: rotate(15deg);
+}

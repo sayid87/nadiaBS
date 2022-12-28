@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-light" id="nav">
+        <div class="container">
             <a class="navbar-brand" href="index.html">Nadia Lelang Mobil</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -47,18 +47,18 @@
         </div>
     </nav>
     <section id="home">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-current="true"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-                    aria-label="Slide 4"></button>
+        <div class="container mt-3">
+            <div class="mt-4 p-5 bg-primary text-white rounded">
+                <h1>HONDA HR-V HYBRID</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                    ut
+                    aliquip ex ea commodo consequat..</p>
             </div>
+        </div>
 
+        <div class="container my-5">
             <section>
                 <!-- SPESIFIKASI DAN LAIN LAIN -->
                 <table class="table">
@@ -70,9 +70,10 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td rowspan="15"><img
+                            <td rowspan="15" class="align-middle"><img
                                     src="https://s3.ap-southeast-1.amazonaws.com/moladin.assets/blog/wp-content/uploads/2021/12/13140337/mobil-honda-terbaru-hr-v-001.jpg"
-                                    class="card-thumbnail" alt="..." /></td>
+                                    class="card-thumbnail" alt="..." class="card-thumbnail" alt="..."
+                                    style="width: 400px; height: 250px; background-size: cover;" /></td>
                             <td>Nama Pemilik</td>
                             <td>Sayyid</td>
                         </tr>
@@ -141,37 +142,99 @@
                     </tbody>
                 </table>
             </section>
+        </div>
 
-            <!-- FOOTER -->
-            <section id="kontak">
-                <div class="container my-5">
-                    <h1>Kontak Kami</h1>
-                    <form>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email Anda</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Harap isi Email Anda" />
+        <!-- FOOTER -->
+        <section id="kontak">
+            <div class="container my-5">
+                <h1>Kontak Kami</h1>
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email Anda</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Harap isi Email Anda" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Pesan Anda</label>
+                        <textarea class="form-control" id="exampleInputPassword1"
+                            placeholder="Harap isi Pesan Anda"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Kirim</button>
+                </form>
+            </div>
+
+        </section>
+
+        <div class="container-fluid" style="background-color: rgba(240, 105, 105, 0.2)">
+            <div class="container">
+                <footer class="pt-5">
+                    <div class="row">
+                        <div class="col-6 col-md-3 mb-3">
+                            <h5>Menu</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#nav" class="nav-link p-0 text-muted">Home</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="index.html#katalog"
+                                        class="nav-link p-0 text-muted">Katalog</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="index.html#kontak"
+                                        class="nav-link p-0 text-muted">Kontak</a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Pesan Anda</label>
-                            <textarea class="form-control" id="exampleInputPassword1"
-                                placeholder="Harap isi Pesan Anda"></textarea>
+
+                        <div class="col-6 col-md-3 mb-3">
+                            <h5>Mobil</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="suzuki.html"
+                                        class="nav-link p-0 text-muted">Suzuki</a></li>
+                                <li class="nav-item mb-2"><a href="honda.html" class="nav-link p-0 text-muted">Honda</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="wuling.html"
+                                        class="nav-link p-0 text-muted">Wuling</a></li>
+                                <li class="nav-item mb-2"><a href="volvo.html" class="nav-link p-0 text-muted">Volvo</a>
+                                </li>
+                            </ul>
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Kirim</button>
-                    </form>
-                </div>
+                        <div class="col-12 col-md-6 mb-3">
+                            <form>
+                                <h5>Subscribe to our newsletter</h5>
+                                <p>Monthly digest of what's new and exciting from us.</p>
+                                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                                    <input id="newsletter1" type="text" class="form-control"
+                                        placeholder="Email address">
+                                    <button class="btn btn-primary" type="button">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <hr class="border border-secondary border-1 opacity-75">
 
-            </section>
-            <footer class="bg-light text-center text-lg-start">
-                <!-- Copyright -->
-                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-                    © 2023 Copyright:
-                    <a class="text-dark" href="#">Kelompok 8 Nadia Koding</a>
-                </div>
-                <!-- Copyright -->
-            </footer>
-            <script src="js/bootstrap.bundle.min.js"></script>
+                    <div class="d-flex flex-column flex-sm-row justify-content-between py-4">
+                        <p>&copy; 2022 Kelompok 8 Nadia Koding</p>
+                        <ul class="list-unstyled d-flex">
+                            <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-twitter" width="32"
+                                        height="42">
+                                        <use xlink:href="#twitter" />
+                                    </i></a></li>
+                            <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-instagram" width="32"
+                                        height="32">
+                                        <use xlink:href="#instagram" />
+                                    </i></a></li>
+                            <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-facebook" width="32"
+                                        height="32">
+                                        <use xlink:href="#facebook" />
+                                    </i></a></li>
+                        </ul>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

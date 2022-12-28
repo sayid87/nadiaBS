@@ -6,13 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/custom.css" />
   <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <title>Nadia Lelang Mobil</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg bg-light" id="nav">
+    <div class="container">
       <a class="navbar-brand" href="index.html">Nadia Lelang Mobil</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,6 +42,9 @@
           <li class="nav-item">
             <a class="nav-link" href="index.html#kontak">Kontak</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#tentang">Tentang Kami</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -59,12 +64,9 @@
 
       <!-- SLIDE MOBIL -->
       <div class="carousel-inner">
-
-
         <!-- SUZUKI -->
         <div class="carousel-item active">
-          <img src="https://promomobilsuzuki.id/wp-content/uploads/2019/08/1-4.png" class="d-block w-100" alt="..."
-            height="511" />
+          <img src="img/2.png" class="d-block w-100" alt="..." />
           <div class="carousel-caption d-none d-md-block">
             <h5>Suzuki</h5>
             <p>
@@ -75,37 +77,28 @@
 
         <!-- HONDA -->
         <div class="carousel-item">
-          <img src="img/honda.png" class="d-block w-100" alt="..." height="511" />
+          <img src="img/1.png" class="d-block w-100" alt="..." />
           <div class="carousel-caption d-none d-md-block">
             <h5>Honda</h5>
-            <p>
-              All New Honda HR-V, Mobil Hybrid Paling Hemat di Indonesia
-            </p>
+            <p>All New Honda HR-V, Mobil Hybrid Paling Hemat di Indonesia</p>
           </div>
         </div>
 
         <!-- WULING -->
         <div class="carousel-item">
-          <img
-            src="https://asset.kompas.com/crops/UJGDPMwe5sl2bIZUq-RfZxeW8P0=/59x42:1226x820/750x500/data/photo/2022/09/10/631c670ed6b0a.jpg"
-            class="d-block w-100" alt="..." height="511" />
+          <img src="img/3.png" class="d-block w-100" alt="..." />
           <div class="carousel-caption d-none d-md-block">
             <h5>Wuling</h5>
-            <p>
-              Wuling AirEV, Mobil Full Electric Versi Mini
-            </p>
+            <p>Wuling AirEV, Mobil Full Electric Versi Mini</p>
           </div>
         </div>
 
         <!-- VOLVO -->
         <div class="carousel-item">
-          <img src="https://www.carblogger.nl/wp-content/uploads/2017/09/volvo-xc40-1200.jpg" class="d-block w-100"
-            alt="..." height="511" />
+          <img src="img/4.png" class="d-block w-100" alt="..." />
           <div class="carousel-caption d-none d-md-block">
             <h5>Volvo</h5>
-            <p>
-              Volvo XC40, Mobil Listrik Masa Depan Bertenaga Besar
-            </p>
+            <p>Volvo XC40, Mobil Listrik Masa Depan Bertenaga Besar</p>
           </div>
         </div>
       </div>
@@ -128,11 +121,12 @@
       <div class="row">
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 my-2">
           <div class="card">
-            <img src="https://promomobilsuzuki.id/wp-content/uploads/2019/08/1-4.png" class="card-img-top" alt="..." />
+            <img src="img/2.png" class="card-img-top img-fluid" alt="..."
+              style="width: 400px; height: 170px; background-size: cover" />
             <div class="card-body">
               <h5 class="card-title">Suzuki</h5>
               <p class="card-text">
-                Suzuki Jimny The Champion, Mobil Tangguh Seperti Semen Tiga Roda
+                Suzuki Jimny The Champion, Mobil Tangguh & Bertenaga
               </p>
               <a href="suzuki.html" class="btn btn-primary">Lihat Detail</a>
             </div>
@@ -140,13 +134,12 @@
         </div>
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 my-2">
           <div class="card">
-            <img
-              src="https://s3.ap-southeast-1.amazonaws.com/moladin.assets/blog/wp-content/uploads/2021/12/13140337/mobil-honda-terbaru-hr-v-001.jpg"
-              class="card-img-top" alt="..." />
+            <img src="img/1.png" class="card-img-top img-fluid" alt="..."
+              style="width: 400px; height: 170px; background-size: cover" />
             <div class="card-body">
               <h5 class="card-title">Honda</h5>
               <p class="card-text">
-                All New Honda HR-V, Mobil Hybrid Paling Hemat di Indonesia
+                All New Honda HR-V, Mobil Hybrid Hemat dikelasnya
               </p>
               <a href="honda.html" class="btn btn-primary">Lihat Detail</a>
             </div>
@@ -154,9 +147,8 @@
         </div>
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 my-2">
           <div class="card">
-            <img
-              src="https://asset.kompas.com/crops/UJGDPMwe5sl2bIZUq-RfZxeW8P0=/59x42:1226x820/750x500/data/photo/2022/09/10/631c670ed6b0a.jpg"
-              class="card-img-top" alt="..." />
+            <img src="img/3.png" class="card-img-top img-fluid" alt="..."
+              style="width: 400px; height: 170px; background-size: cover" />
             <div class="card-body">
               <h5 class="card-title">Wuling</h5>
               <p class="card-text">
@@ -168,8 +160,8 @@
         </div>
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 my-2">
           <div class="card">
-            <img src="https://www.carblogger.nl/wp-content/uploads/2017/09/volvo-xc40-1200.jpg" class="card-img-top"
-              alt="..." />
+            <img src="img/4.png" class="card-img-top img-fluid" alt="..."
+              style="width: 400px; height: 170px; background-size: cover" />
             <div class="card-body">
               <h5 class="card-title">Volvo</h5>
               <p class="card-text">
@@ -200,14 +192,93 @@
       </form>
     </div>
   </section>
-  <footer class="bg-light text-center text-lg-start">
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-      © 2023 Copyright:
-      <a class="text-dark" href="#">Kelompok 8 Nadia Koding</a>
+
+  <section id="tentang">
+    <div class="container my-5">
+      <h1>Tentang Kami | <b>Tim 8</b></h1>
+      <div class="row text-center">
+        <div class="col-12 col-md-3">
+          <img src="img/av-1.png" alt="Avatar" class="avatar">
+          <b>
+            <p class="fs-6 py-3">Bagus Bambang Syahputra</p>
+          </b>
+        </div>
+        <div class="col-12 col-md-3">
+          <img src="img/av-2.png" alt="Avatar" class="avatar">
+          <b>
+            <p class="fs-6 py-3">Ranjid Ali</p>
+          </b>
+        </div>
+        <div class="col-12 col-md-3">
+          <img src="img/av-3.png" alt="Avatar" class="avatar">
+          <b>
+            <p class="fs-6 py-3">Sayid</p>
+          </b>
+        </div>
+        <div class="col-12 col-md-3">
+          <img src="img/av-4.png" alt="Avatar" class="avatar">
+          <b>
+            <p class="fs-6 py-3">Roby Koswara</p>
+          </b>
+        </div>
+      </div>
     </div>
-    <!-- Copyright -->
-  </footer>
+  </section>
+
+  <div class="container-fluid" style="background-color: rgba(240, 105, 105, 0.2)">
+    <div class="container">
+      <footer class="pt-5">
+        <div class="row">
+          <div class="col-6 col-md-3 mb-3">
+            <h5>Menu</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#nav" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#katalog" class="nav-link p-0 text-muted">Katalog</a></li>
+              <li class="nav-item mb-2"><a href="#kontak" class="nav-link p-0 text-muted">Kontak</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-3 mb-3">
+            <h5>Mobil</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="suzuki.html" class="nav-link p-0 text-muted">Suzuki</a></li>
+              <li class="nav-item mb-2"><a href="honda.html" class="nav-link p-0 text-muted">Honda</a></li>
+              <li class="nav-item mb-2"><a href="wuling.html" class="nav-link p-0 text-muted">Wuling</a></li>
+              <li class="nav-item mb-2"><a href="volvo.html" class="nav-link p-0 text-muted">Volvo</a></li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-6 mb-3">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <hr class="border border-secondary border-1 opacity-75">
+
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4">
+          <p>&copy; 2022 Kelompok 8 Nadia Koding</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-twitter" width="32" height="42">
+                  <use xlink:href="#twitter" />
+                </i></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-instagram" width="32" height="32">
+                  <use xlink:href="#instagram" />
+                </i></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-facebook" width="32" height="32">
+                  <use xlink:href="#facebook" />
+                </i></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </div>
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
